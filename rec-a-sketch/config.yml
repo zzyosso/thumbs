@@ -1,0 +1,29 @@
+# Visit https://sites.google.com/a/chromium.org/chromedriver/downloads
+# to download the chromedriver binary
+# chromedriver: '/home/ethan/Documents/rec-a-sketch/chromedriver'
+chromedriver: 'C:/Program Files (x86)/Google/Chrome/Application/chromedriver'
+PARENT_CATALOG_URL: 'https://sketchfab.com/models?sort_by=-likeCount&page='
+BASE_MODEL_URL: 'https://sketchfab.com/models/'
+BASE_THUMBS_URL: 'https://sketchfab.com/i/models/'
+BASE_LIKES_URL: 'https://sketchfab.com/i/likes'
+LIKE_LIMIT: 5
+MAX_WORKERS: 5
+
+data_dir: 'data'
+data_files:
+  model_url_file: 'model_urls.psv'
+  likes_file: 'model_likes.psv'
+  model_features_file: 'model_feats.psv'
+
+db_dir: 'db'
+db_files:
+  recs:
+    tl: 'recs_tl.csv'
+    wrmf: 'recs_wrmf.csv'
+    l2r: 'recs_l2r.csv'
+  mid_data_file: 'mid_data.csv'
+  sqlite_file: 'recasketch.sqlite'
+  mid_names_file: 'model_names.psv'
+
+thumbs_dir: 'model_thumbs'
+thumbs_suffix: 'thumb200.jpg'
